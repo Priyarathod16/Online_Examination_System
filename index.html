@@ -2338,7 +2338,6 @@ function showDemoHelp(box) {
   mount(box,
     h('strong', { text: 'Demo accounts' }),
     h('div', { text: 'Administrator: admin / Admin@123' }),
-    h('div', { text: 'To create another administrator, use the key: EXAM-ADMIN-2026' }),
     h('div', { text: 'Student: alice@example.com / Student@123 (or bob@example.com)' }),
     h('div', { class: 'actions' }, button('Reset sample data', 'secondary', async () => {
       if (!(await confirmDialog('Delete everything stored in this browser (accounts, exams, results) and restore the sample data?',

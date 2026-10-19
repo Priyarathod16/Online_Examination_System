@@ -1,0 +1,16 @@
+# Copy this file to config/db.properties and edit the values.
+# config/db.properties is listed in .gitignore and must never be committed.
+#
+# db.url      JDBC URL of the MySQL database created by database/online_exam.sql
+# db.user     MySQL user (a least-privilege user is recommended, see the comments in online_exam.sql)
+# db.password MySQL password
+#
+db.url=jdbc:mysql://localhost:3306/online_exam?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&connectTimeout=5000&socketTimeout=30000
+db.user=root
+db.password=your_mysql_password_here
+
+# admin.registration.key   Secret typed on the "Create an administrator account" screen. Without the right key nobody
+#                          can make themselves an administrator. CHANGE IT. (Alternatives: environment variable
+#                          EXAM_ADMIN_KEY or -Dexam.admin.key=...; if none is set the built-in default
+#                          EXAM-ADMIN-2026 is used, which is only suitable for demos.)
+admin.registration.key=change-this-secret-key
